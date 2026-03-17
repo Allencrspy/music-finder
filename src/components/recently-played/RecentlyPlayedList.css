@@ -1,0 +1,37 @@
+.recently-played-container {
+  margin-top: 20px;
+}
+
+.recently-played-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.recent-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.recent-item:hover {
+  background: #2a2a2a;
+}
+
+.recent-art {
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+}
+
+.recent-title {
+  font-size: 13px;
+}
+
+.recent-artist {
+  font-size: 11px;
+  color: #aaa;
+}

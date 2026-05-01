@@ -9,7 +9,7 @@ interface PlaylistDetailProps {
   onPlaySong: (song: Song) => void;
 }
 
-const PlaylistDetail = ({ playlist, onBack, onRemoveSong, onPlaySong }: PlaylistDetailProps) => {
+const PlaylistDetail = ({ playlist, onBack, onRemoveSong }: PlaylistDetailProps) => {
   return (
     <section className="playlist-detail-page">
       <div className="section-header">

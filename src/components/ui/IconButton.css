@@ -1,0 +1,80 @@
+.ui-icon-btn {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0;
+  color: white;
+}
+
+.ui-icon-btn svg {
+  fill: currentColor;
+}
+
+.ui-icon-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Sizes */
+.ui-icon-btn-sm {
+  width: 32px;
+  height: 32px;
+}
+.ui-icon-btn-sm svg {
+  width: 16px;
+  height: 16px;
+}
+
+.ui-icon-btn-md {
+  width: 44px;
+  height: 44px;
+}
+.ui-icon-btn-md svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Variants */
+.ui-icon-btn-solid {
+  background: #00BD44;
+}
+.ui-icon-btn-solid:hover:not(:disabled) {
+  background: #00e050;
+  transform: scale(1.05);
+}
+
+.ui-icon-btn-blur {
+  background: rgba(0, 0, 0, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+}
+.ui-icon-btn-blur:hover:not(:disabled) {
+  background: rgba(0, 0, 0, 0.85);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.ui-icon-btn-outline {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.7);
+}
+.ui-icon-btn-outline:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.ui-icon-btn-ghost {
+  background: transparent;
+  color: #a1a1a1;
+}
+.ui-icon-btn-ghost:hover:not(:disabled) {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}

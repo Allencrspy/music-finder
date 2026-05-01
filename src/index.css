@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 :root {
   font-family: "Outfit", sans-serif;
@@ -9,17 +13,33 @@
 
 html,
 body {
-  all: unset;
-  height: 100%;
-  width: 100%;
-
+  height: 100vh;
+  width: 100vw;
   margin: 0;
+  padding: 0;
+  overflow: hidden;
 
   font-family: "Outfit", sans-serif;
-
   background: #121212;
   color: white;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Force all interactive elements to inherit our premium font */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
 }

@@ -1,16 +1,50 @@
-# React + Vite
+# Music Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fast and easy-to-use music dashboard. Search for your favorite songs, build custom playlists, and download tracks for offline listening—all in one place.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## What's New? (Modernization)
 
-## React Compiler
+The application has been completely rebuilt to be faster and more organized:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Better Structure: The app is now split into clean sections (Search, Favorites, Playlists), making it much smoother to navigate.
+- Smart Logic: All song actions (playing, saving, downloading) are now handled by one centralized hook, ensuring the app reacts instantly to your clicks.
+- Solid Foundation: The codebase has been fully converted to TypeScript, ensuring a more reliable and bug-free experience.
+- Premium Look: Updated with the modern Outfit font, sleek animations, and a glassy design that feels high-end.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Top Features
+
+- Infinite Search: Keep scrolling to find more songs without needing to click through pages.
+- Favorites: Save the songs you love with a single click.
+- Playlists: Create and manage your own custom music collections.
+- Easy Downloads: 
+  - Single Track: Download any song instantly as an MP3.
+  - Bulk Download: Grab your entire Favorites list as a single ZIP file.
+- Live Waveform: A clean animation shows you exactly which song is currently playing.
+
+---
+
+## Built With
+
+- React & Vite: For a lightning-fast user interface.
+- Zustand: Keeps your music, favorites, and playlists perfectly in sync.
+- iTunes API: Access millions of songs instantly.
+- Firebase: Safely syncs your library to the cloud.
+
+---
+
+## Project Setup
+
+1. Clone the repository: `git clone https://github.com/Allencrspy/music-finder.git`
+2. Install dependencies: `npm install`
+3. Run locally: `npm run dev`
+
+---
+
+## Author
+
+Allen Thomas  
+GitHub: [Allencrspy](https://github.com/Allencrspy)
